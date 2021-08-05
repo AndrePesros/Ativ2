@@ -18,12 +18,13 @@ namespace cotaçao
 
             double conta;
             
-                conta = a.Valor - 6 % + a.Dolar / 5.19;
+                conta = a.Valor/ 6.00;
 
-                
-            
+            double conta2 = a.Dolar * 5.19;
 
-            Console.WriteLine("Dolas comprados $ " +conta);
+            double resultado = conta / conta2;
+
+            Console.WriteLine("Dolas comprados $ " +resultado);
 
             Console.ReadKey();
         }
