@@ -8,23 +8,14 @@ namespace cotaçao
         {
             Conversodemoeda a = new Conversodemoeda();
 
-            Console.WriteLine("Cotação do Dolar: 5,19");
-            
-            Console.WriteLine("Quantos dolares você vai comprar? ");
-            a.Dolar = double.Parse(Console.ReadLine());
-            Console.WriteLine(" ");
-            Console.WriteLine("Valor a ser pago em Reais: ");
-            a.Valor = double.Parse(Console.ReadLine());
+            Console.WriteLine("Diga qual o valor da cotação atual do Dólar: ");
+            double x = double.Parse(Console.ReadLine());
+            a.Cotaçãoção = x;
+            Console.WriteLine("Quantos dólares você vai compra: ");
+            double z = double.Parse(Console.ReadLine());
+            a.Dolar = z;
 
-            double conta;
-            
-                conta = a.Valor/ 6.00;
-
-            double conta2 = a.Dolar * 5.19;
-
-            double resultado = conta / conta2;
-
-            Console.WriteLine("Dolas comprados $ " +resultado);
+            Console.WriteLine(a);
 
             Console.ReadKey();
         }
